@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model AppleEater
+
+<h5 class="bg-primary text-white text-center m-2 p-2">RegForm</h5>
+<form asp-action="RegForm" method="post" class="m-2">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="Name">Your Name:</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Your Email:</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Registration</button>
+</form>
+
+<a class="btn btn-outline-primary" asp-action="Index">
+    Return
+</a>
